@@ -1,6 +1,6 @@
 <?php
 /**
- * Base for session testing.
+ * Base for story based package testing.
  *
  * PHP version 5
  *
@@ -13,7 +13,7 @@
  */
 
 /**
- * Base for session testing.
+ * Base for story based package testing.
  *
  * Copyright 2010 Klarälvdalens Datakonsult AB
  *
