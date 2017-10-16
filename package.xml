@@ -10,8 +10,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2012-11-19</date>
- <time>14:08:24</time>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.0beta1</release>
   <api>1.0.0</api>
@@ -27,15 +26,6 @@
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
-   <dir name="doc">
-    <dir name="Horde">
-     <dir name="Kolab">
-      <dir name="Config">
-       <file name="COPYING" role="doc" />
-      </dir> <!-- /doc/Horde/Kolab/Config -->
-     </dir> <!-- /doc/Horde/Kolab -->
-    </dir> <!-- /doc/Horde -->
-   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Horde">
      <dir name="Kolab">
@@ -75,8 +65,9 @@
      </dir> <!-- /test/Horde/Kolab -->
     </dir> <!-- /test/Horde -->
    </dir> <!-- /test -->
-   <file name="build.xml" role="data" />
-   <file name="phpunit.xml" role="data" />
+   <file name="build.xml" role="php" />
+   <file name="LICENSE" role="doc" />
+   <file name="phpunit.xml" role="php" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -102,20 +93,22 @@
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="COPYING" name="doc/Horde/Kolab/Config/COPYING" />
+   <install as="" name="build.xml" />
    <install as="Horde/Kolab/Config.php" name="lib/Horde/Kolab/Config.php" />
    <install as="Horde/Kolab/Config/Exception.php" name="lib/Horde/Kolab/Config/Exception.php" />
+   <install as="LICENSE" name="LICENSE" />
+   <install as="" name="phpunit.xml" />
    <install as="Horde/Kolab/Config/AllTests.php" name="test/Horde/Kolab/Config/AllTests.php" />
    <install as="Horde/Kolab/Config/Autoload.php" name="test/Horde/Kolab/Config/Autoload.php" />
    <install as="Horde/Kolab/Config/bootstrap.php" name="test/Horde/Kolab/Config/bootstrap.php" />
    <install as="Horde/Kolab/Config/conf.php.dist" name="test/Horde/Kolab/Config/conf.php.dist" />
    <install as="Horde/Kolab/Config/ConfigStoryTestCase.php" name="test/Horde/Kolab/Config/ConfigStoryTestCase.php" />
-   <install as="Horde/Kolab/Config/phpunit.xml" name="test/Horde/Kolab/Config/phpunit.xml" />
    <install as="Horde/Kolab/Config/fixture/empty/no_config_file" name="test/Horde/Kolab/Config/fixture/empty/no_config_file" />
    <install as="Horde/Kolab/Config/fixture/global/globals.conf" name="test/Horde/Kolab/Config/fixture/global/globals.conf" />
    <install as="Horde/Kolab/Config/fixture/local/kolab.conf" name="test/Horde/Kolab/Config/fixture/local/kolab.conf" />
    <install as="Horde/Kolab/Config/fixture/local/kolab.globals" name="test/Horde/Kolab/Config/fixture/local/kolab.globals" />
    <install as="Horde/Kolab/Config/Integration/ConfigTest.php" name="test/Horde/Kolab/Config/Integration/ConfigTest.php" />
+   <install as="Horde/Kolab/Config/phpunit.xml" name="test/Horde/Kolab/Config/phpunit.xml" />
   </filelist>
  </phprelease>
  <changelog>
