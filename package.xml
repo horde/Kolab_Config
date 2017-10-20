@@ -10,7 +10,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>1.0.0beta1</release>
   <api>1.0.0</api>
@@ -60,7 +60,6 @@
        <file name="bootstrap.php" role="test" />
        <file name="conf.php.dist" role="test" />
        <file name="ConfigStoryTestCase.php" role="test" />
-       <file name="phpunit.xml" role="test" />
       </dir> <!-- /test/Horde/Kolab/Config -->
      </dir> <!-- /test/Horde/Kolab -->
     </dir> <!-- /test/Horde -->
@@ -108,7 +107,6 @@
    <install as="Horde/Kolab/Config/fixture/local/kolab.conf" name="test/Horde/Kolab/Config/fixture/local/kolab.conf" />
    <install as="Horde/Kolab/Config/fixture/local/kolab.globals" name="test/Horde/Kolab/Config/fixture/local/kolab.globals" />
    <install as="Horde/Kolab/Config/Integration/ConfigTest.php" name="test/Horde/Kolab/Config/Integration/ConfigTest.php" />
-   <install as="Horde/Kolab/Config/phpunit.xml" name="test/Horde/Kolab/Config/phpunit.xml" />
   </filelist>
  </phprelease>
  <changelog>
