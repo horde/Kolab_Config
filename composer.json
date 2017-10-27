@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-kolab-config",
+    "name": "horde/kolab-config",
     "description": "A package for reading the Kolab server configuration",
     "type": "library",
     "homepage": "https://pear.horde.org",
