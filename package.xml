@@ -10,8 +10,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2012-11-19</date>
- <time>14:08:24</time>
+ <date>2017-10-30</date>
  <version>
   <release>1.0.0beta1</release>
   <api>1.0.0</api>
@@ -31,6 +30,7 @@
     <dir name="Horde">
      <dir name="Kolab">
       <dir name="Config">
+       <file name="CHANGES" role="doc" />
        <file name="COPYING" role="doc" />
       </dir> <!-- /doc/Horde/Kolab/Config -->
      </dir> <!-- /doc/Horde/Kolab -->
@@ -102,6 +102,7 @@
  </dependencies>
  <phprelease>
   <filelist>
+   <install as="CHANGES" name="doc/Horde/Kolab/Config/CHANGES" />
    <install as="COPYING" name="doc/Horde/Kolab/Config/COPYING" />
    <install as="Horde/Kolab/Config.php" name="lib/Horde/Kolab/Config.php" />
    <install as="Horde/Kolab/Config/Exception.php" name="lib/Horde/Kolab/Config/Exception.php" />
