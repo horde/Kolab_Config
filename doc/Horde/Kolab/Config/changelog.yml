@@ -9,4 +9,5 @@
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
-    First alpha release for Horde 4.
+    [jan] Mark PHP 7 as supported.
+    [jan] Fix tests to work with PHPUnit 3.6.
