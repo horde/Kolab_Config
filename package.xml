@@ -2,7 +2,7 @@
 <package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Horde_Kolab_Config</name>
  <channel>pear.horde.org</channel>
- <summary>A package for reading the Kolab server configuration</summary>
+ <summary>Kolab server configuration library</summary>
  <description>This package reads the various Kolab server configuration files. It should also support retrieving configuration parameters from LDAP but this is not yet implemented.</description>
  <lead>
   <name>Gunnar Wrobel</name>
@@ -10,14 +10,14 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-27</date>
+ <date>2017-11-11</date>
  <version>
-  <release>1.0.0beta1</release>
+  <release>1.0.0alpha1</release>
   <api>1.0.0</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>alpha</release>
+  <api>alpha</api>
  </stability>
  <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
  <notes>
@@ -129,10 +129,11 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2011-03-07</date>
+   <date>2017-11-11</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
-* First alpha release for Horde 4.
+* [jan] Mark PHP 7 as supported.
+* [jan] Fix tests to work with PHPUnit 3.6.
    </notes>
   </release>
  </changelog>
