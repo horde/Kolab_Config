@@ -10,7 +10,7 @@
   <email>p@rdus.de</email>
   <active>no</active>
  </lead>
- <date>2017-11-14</date>
+ <date>2017-11-15</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -75,7 +75,6 @@
    </dir> <!-- /test -->
    <file name="build.xml" role="php" />
    <file name="LICENSE" role="doc" />
-   <file name="phpunit.xml" role="php" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -106,7 +105,6 @@
    <install as="Horde/Kolab/Config.php" name="lib/Horde/Kolab/Config.php" />
    <install as="Horde/Kolab/Config/Exception.php" name="lib/Horde/Kolab/Config/Exception.php" />
    <install as="LICENSE" name="LICENSE" />
-   <install as="" name="phpunit.xml" />
    <install as="Horde/Kolab/Config/AllTests.php" name="test/Horde/Kolab/Config/AllTests.php" />
    <install as="Horde/Kolab/Config/Autoload.php" name="test/Horde/Kolab/Config/Autoload.php" />
    <install as="Horde/Kolab/Config/bootstrap.php" name="test/Horde/Kolab/Config/bootstrap.php" />
@@ -129,7 +127,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-11-14</date>
+   <date>2017-11-15</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * [jan] Mark PHP 7 as supported.
