@@ -2,22 +2,22 @@
 <package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Horde_Kolab_Config</name>
  <channel>pear.horde.org</channel>
- <summary>A package for reading the Kolab server configuration</summary>
+ <summary>Kolab server configuration library</summary>
  <description>This package reads the various Kolab server configuration files. It should also support retrieving configuration parameters from LDAP but this is not yet implemented.</description>
  <lead>
   <name>Gunnar Wrobel</name>
   <user>wrobel</user>
   <email>p@rdus.de</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
- <date>2017-10-30</date>
+ <date>2017-11-15</date>
  <version>
-  <release>1.0.0beta1</release>
-  <api>1.0.0</api>
+   <release>1.0.0alpha1</release>
+   <api>1.0.0</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+   <release>alpha</release>
+   <api>alpha</api>
  </stability>
  <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
  <notes>
@@ -70,13 +70,11 @@
        <file name="bootstrap.php" role="test" />
        <file name="conf.php.dist" role="test" />
        <file name="ConfigStoryTestCase.php" role="test" />
-       <file name="phpunit.xml" role="test" />
       </dir> <!-- /test/Horde/Kolab/Config -->
      </dir> <!-- /test/Horde/Kolab -->
     </dir> <!-- /test/Horde -->
    </dir> <!-- /test -->
    <file name="build.xml" role="data" />
-   <file name="phpunit.xml" role="data" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -111,7 +109,6 @@
    <install as="Horde/Kolab/Config/bootstrap.php" name="test/Horde/Kolab/Config/bootstrap.php" />
    <install as="Horde/Kolab/Config/conf.php.dist" name="test/Horde/Kolab/Config/conf.php.dist" />
    <install as="Horde/Kolab/Config/ConfigStoryTestCase.php" name="test/Horde/Kolab/Config/ConfigStoryTestCase.php" />
-   <install as="Horde/Kolab/Config/phpunit.xml" name="test/Horde/Kolab/Config/phpunit.xml" />
    <install as="Horde/Kolab/Config/fixture/empty/no_config_file" name="test/Horde/Kolab/Config/fixture/empty/no_config_file" />
    <install as="Horde/Kolab/Config/fixture/global/globals.conf" name="test/Horde/Kolab/Config/fixture/global/globals.conf" />
    <install as="Horde/Kolab/Config/fixture/local/kolab.conf" name="test/Horde/Kolab/Config/fixture/local/kolab.conf" />
@@ -129,10 +126,11 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2011-03-07</date>
+   <date>2017-11-15</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
-* First alpha release for Horde 4.
+* [jan] Mark PHP 7 as supported.
+* [jan] Fix tests to work with PHPUnit 3.6.
    </notes>
   </release>
  </changelog>
