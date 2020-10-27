@@ -1,7 +1,7 @@
 {
-    "name": "horde/kolab-config",
+    "name": "horde/kolab_config",
     "description": "Kolab server configuration library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "LGPL-2.1",
     "authors": [
@@ -12,22 +12,19 @@
         }
     ],
     "version": "1.0.0alpha1",
-    "time": "2017-11-14",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.4"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Kolab_Config": "1.*",
-        "pear-horde/Horde_Kolab_Config": "1.*"
+        "horde/test": "^2.4"
     },
     "autoload": {
         "psr-0": {
