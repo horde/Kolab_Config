@@ -1,0 +1,21 @@
+---
+1.0.0:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2026-06-28
+  license:
+    identifier: LGPL-2.1-only
+    uri: https://spdx.org/licenses/LGPL-2.1-only.html
+  notes: "chore: refresh qc fixes and platform deps\nchore: Update workflow dependency\nUpdate metadata and workflows for PHP 8 support\nAdd CI job for satis repo update\nAdd warning against using this master branch for patches\nRegenerate composer.json\nUpdate supported PHP versions and configuration names.\nStandardize descriptions.\nAdd chomp character.\nEnable PHP 7.3 CI.\nFix file listing.\nUse our default config, fixes Travis.\nUpdate package definitions.\nSet more developers inactive.\nUpdate package definitions.\nFix getting exit code on PHP 7.2+.\nFix changelog.\nFix versions.\nCreate CHANGES for all components.\nBuild changelog.yml from existing changelog(s).\nUpdate .horde.yml with extended information.\nUpdate composer.json.\nEnable 7.2 builds.\nPEAR on 5.6 and 7.0 is fixed.\nUpdate file list\nMove phpunit configuration to base directory.\nUpdate references to COPYING files.\nUse LICENSE consistently and move to base directory.\nStop flooding #horde channel.\nUse https URLs.\nRemove incorrect links.\nInstall all dependencies but PECL extensions.\nHopefully this finally fixes Travis builds now.\nAlways discover channel manually, due to Travis bug.\nFix Travis tests.\nAdd Travis configuration and .gitignore files.\nAdd type parameter to .horde.yml files.\nUpdate composer information.\nUpdated composer definitions.\nRename horde.yml files.\nStandardize library full names.\nGenerate horde.yml files for all components.\nHappy New Year!\nUse HTTPS.\nNow that all tests pass on PHP 7, bump supported PHP version at least for all packages that have tests.\nHappy New Year!\nCS: Lowercase php keywords (especially instanceof / implements / extends)\nHappy New Year!\nRequire Horde_Test 2.4 instead.\nRevert \"This class is not PHPUnit 4 compatible\"\nThis class is not PHPUnit 4 compatible\nExclude BC breaking PHP versions.\nHappy New Year!\nAdd composer.json to packages/libraries\nPHPUnit_Story is needed.\nHappy New Year!\nAdd/update Horde_Test dependencies.\nSetup tests without requiring any modification of Horde_Test glue files.\nStable versions.\nBump minimum versions to beta1.\nClean up the rest of the dependencies for Horde 5\nExclude pre-releases of higher major versions too.\nAll packages require PHP 5.3.0 now.\nUse __DIR__.\nHappy New Year!\n[jan] Fix tests to work with PHPUnit 3.6.\nAdding COPYING file, copyright related edits\nRemove dot at end of summaries (lintian warning)\nStreamline changelogs, update developers.\n<notes> must not be emtpy.\nBump versions, reset release notes.\nSet minimum version numbers.\nConsistent versions and other cleanup in preparation for alpha releases.\nConsistently use the same minimum PHP and PEAR installer versions.\nPrefix PEAR package names with Horde_ to avoid file name collisions.\nHappy New Year!\nUpdate package.xml.\nFix the CI build script. Why did this work before?\nAdd a fix to ignore the autoloading of the newer PHPUnit (>= 3.5.0, currently RC).\nWorking option parser.\nAdd a draft definition for the continuous integration setup.\nInitial implementation of the Kolab_Config package.\nInitial package structure."
+1.0.0alpha1:
+  api: 1.0.0
+  state:
+    release: alpha
+    api: alpha
+  date: 2011-03-07
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "[jan] Mark PHP 7 as supported.\n[jan] Fix tests to work with PHPUnit 3.6.\n"

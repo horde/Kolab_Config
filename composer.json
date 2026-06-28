@@ -1,7 +1,7 @@
 {
     "name": "horde/kolab_config",
     "description": "Kolab server configuration library",
-    "type": "horde-library",
+    "type": "library",
     "homepage": "https://www.horde.org",
     "license": "LGPL-2.1-only",
     "authors": [
@@ -11,24 +11,31 @@
             "role": "lead"
         }
     ],
-    
-    "time": "2020-10-27",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://horde-satis.maintaina.com"
-        }
-    ],
+    "time": "2026-06-28",
+    "repositories": [],
     "require": {
-        "horde/horde-installer-plugin": "^2 || dev-FRAMEWORK_6_0",
         "php": "^7.4 || ^8"
     },
+    "require-dev": {},
     "suggest": {
-        "horde/test": "^3"
+        "horde/test": "^3 || dev-FRAMEWORK_6_0"
     },
     "autoload": {
         "psr-0": {
             "Horde_Kolab_Config": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Horde\\Kolab\\Config\\Test\\": "test/"
+        }
+    },
+    "config": {
+        "allow-plugins": {}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-FRAMEWORK_6_0": "1.x-dev"
         }
     }
 }

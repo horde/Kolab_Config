@@ -15,10 +15,10 @@ authors:
     active: false
     role: lead
 version:
-  release: 1.0.0alpha1
+  release: 1.0.0
   api: 1.0.0
 state:
-  release: alpha
+  release: stable
   api: alpha
 license:
   identifier: LGPL-2.1-only
@@ -32,19 +32,12 @@ dependencies:
 keywords: null
 vendor: horde
 ci-platform:
-  '8.0':
-    - composer-plugin-api: ~2.0
-  '8.1':
-    - composer-plugin-api: ~2.0
-  '8.2':
-    - composer-plugin-api: ~2.0
-  '8.3':
-    - composer-plugin-api: ~2.0
-  '8.4':
-    - composer-plugin-api: ~2.0
-  '8.5':
-    - composer-plugin-api: ~2.0
-  '8.6':
-    - composer-plugin-api: ~2.0
+  '8.0': not resolvable
+  '8.1': not resolvable
+  '8.2': not resolvable
+  '8.3': not resolvable
+  '8.4': not resolvable
+  '8.5': not resolvable
+  '8.6': not resolvable
 ci-platform-flags:
   needs_installer_plugin: false
