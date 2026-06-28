@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Kolab Server configuration handler.
  *
@@ -13,7 +14,7 @@
 /**
  * The Kolab Server configuration handler.
  *
- * Copyright 2010 Klarälvdalens Datakonsult AB
+ * Copyright 2010-2026 Klarälvdalens Datakonsult AB
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -23,8 +24,7 @@
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.horde.org/licenses/lgpl21 LGPL 2.1
  */
-class Horde_Kolab_Config
-implements ArrayAccess
+class Horde_Kolab_Config implements ArrayAccess
 {
     /**
      * The path to the directory holding the configuration files.
@@ -69,7 +69,7 @@ implements ArrayAccess
     ) {
         if ($directory === '@kolab_server_dir@/etc/kolab') {
             $this->_directory = '/kolab/etc/kolab';
-        } else {            
+        } else {
             $this->_directory = realpath($directory);
         }
         $this->_global    = $global;
@@ -106,7 +106,7 @@ implements ArrayAccess
     private function _loadConfigurationFile($path)
     {
         if ($this->_data === null) {
-            $this->_data = array();
+            $this->_data = [];
         }
 
         $fh = fopen($path, 'r');
@@ -195,9 +195,7 @@ implements ArrayAccess
      *
      * @return NULL
      */
-    public function offsetSet($key, $value)
-    {
-    }
+    public function offsetSet($key, $value) {}
 
     /**
      * Delete the value identified by the given key.
@@ -206,7 +204,5 @@ implements ArrayAccess
      *
      * @return NULL
      */
-    public function offsetUnset($key)
-    {
-    }
+    public function offsetUnset($key) {}
 }

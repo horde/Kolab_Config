@@ -9,8 +9,7 @@ description: >-
 list: dev
 type: library
 authors:
-  -
-    name: Gunnar Wrobel
+  - name: Gunnar Wrobel
     user: wrobel
     email: p@rdus.de
     active: false
@@ -30,3 +29,22 @@ dependencies:
   optional:
     composer:
       horde/test: ^3
+keywords: null
+vendor: horde
+ci-platform:
+  '8.0':
+    - composer-plugin-api: ~2.0
+  '8.1':
+    - composer-plugin-api: ~2.0
+  '8.2':
+    - composer-plugin-api: ~2.0
+  '8.3':
+    - composer-plugin-api: ~2.0
+  '8.4':
+    - composer-plugin-api: ~2.0
+  '8.5':
+    - composer-plugin-api: ~2.0
+  '8.6':
+    - composer-plugin-api: ~2.0
+ci-platform-flags:
+  needs_installer_plugin: false
